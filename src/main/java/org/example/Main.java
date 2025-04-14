@@ -2,10 +2,16 @@ package org.example;
 
 
 public class Main {
-    public static void main(String[] args) {//TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String[] args) {
         System.out.printf("Second commit");
 
+        Cat firstCat = new Cat("Борис", "бежевый", 2);
+        Cat secondCat = new Cat("Мурзик", "черно-белый", 3);
+
+        System.out.println("Данные первого кота : " + firstCat.getName() + " , "
+                + firstCat.getColor() + " , " + firstCat.getAge());
+
+        System.out.println("Данные второго кота : " + secondCat.getName() + " , "
+                + secondCat.getColor() + " , " + secondCat.getAge());
     }
 }
